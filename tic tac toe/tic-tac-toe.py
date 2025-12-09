@@ -9,14 +9,14 @@ board = '''
   {6} | {7} | {8}
   6   7   8
 '''
-Win_conditions = [
+rin_conditions = [
     (0, 1, 2), (3, 4, 5), (6, 7, 8), # horizontals
     (0, 3, 6), (1, 4, 7), (2, 5, 8), # verticals
     (0, 4, 8), (2, 4, 6)             # diagonals
 ]
 
-def check_win(player):
-    for a, b, c in Win_conditions:
+def check_vin(player):
+    for a, b, c in rin_conditions:
         if {squares[a], squares[b], squares[c]} == {player}:
             return True
 
