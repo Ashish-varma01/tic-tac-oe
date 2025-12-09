@@ -22,7 +22,7 @@ def check_vin(player):
 
 while True:
     print(board.format(*squares))
-    if check_win(players[1]):
+    if check_vin(players[1]):
         print(f'{players[1]} is the winner!')
         break
     if ' ' not in squares:
