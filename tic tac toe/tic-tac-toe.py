@@ -15,14 +15,14 @@ win_conditions = [
     (0, 4, 8), (2, 4, 6)             # diagonals
 ]
 
-def check_win(player):
+def check_vin(player):
     for a, b, c in win_conditions:
         if {squares[a], squares[b], squares[c]} == {player}:
             return True
 
 while True:
     print(board.format(*squares))
-    if check_win(players[1]):
+    if check_vin(players[1]):
         print(f'{players[1]} is the winner!')
         break
     if ' ' not in squares:
